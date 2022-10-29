@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(120, 51, 190);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 80vh;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.inputBox{
+  display: flex;
+  justify-content: center;
+  width: 450px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+input{
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+button{
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.alltools{
+  margin: 0;padding: 0;
+  list-style: none;
+}
+.singletool{
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 225, 0);
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: black;
+  width: 450px;
+  font-size: 20px;
+}
+.text{
+  flex: 1;
+}
+i{
+  margin: 0 5px;
+  cursor: pointer;
+}
+.fa-check-square:hover{
+  color: green;
+  background-color: white;
+}
+.fa-trash:hover{
+  color: red;
+  background-color: white;
+}
+.fa-edit:hover{
+  color: black;
+  background-color: white;
+}
+@media (max-width:600px){
+  *{
+    background-color: rgb(120, 51, 190);
   }
-  to {
-    transform: rotate(360deg);
+  .app{
+    justify-content: inherit;
+  }
+  .container{
+    color: white;
+    /* padding: 0;
+    border: 0px; */
+  }
+  input{
+    background-color: white;
+    color: black;
+  }
+  button{
+    background-color: white;
+    color: black;
+  }
+  .text{
+    background-color: rgb(255, 225, 0) ;
   }
 }
